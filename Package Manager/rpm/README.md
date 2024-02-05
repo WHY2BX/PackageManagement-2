@@ -41,7 +41,7 @@ rpm -q  [ ชื่อ package ]
 ## Remove
 ใช้ rpm
 ```
-	sudo rpm -e  [ ชื่อ package ]
+sudo rpm -e  [ ชื่อ package ]
 ```
 ใช้ yum
 ```
