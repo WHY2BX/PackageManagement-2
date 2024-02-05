@@ -20,6 +20,7 @@ sudo rpm -qpR [ ชื่อ package ]
 
 ## Install
 การติดตั้ง rpm สามารถใช้ได้ 3 คำสั่ง คือ rpm, yum และ dnf
+
 ใช้ rpm
 ```
 sudo rpm -i [ ชื่อ package ที่ต้องการติดตั้ง ]
