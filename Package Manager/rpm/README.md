@@ -81,11 +81,11 @@ rpm -qdf (query document file)
 
 
 # reference
-1)https://www.tecmint.com/20-practical-examples-of-rpm-commands-in-linux/
+1) https://www.tecmint.com/20-practical-examples-of-rpm-commands-in-linux/
 
-2)https://phoenixnap.com/kb/how-to-install-rpm-file-centos-linux/
+2) https://phoenixnap.com/kb/how-to-install-rpm-file-centos-linux/
 
-3)https://access.redhat.com/solutions/1189/
+3) https://access.redhat.com/solutions/1189/
 
 
 
