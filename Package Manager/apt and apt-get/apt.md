@@ -52,13 +52,13 @@ apt autoremove ชื่อpackage
 ```
 reinstall ชื่อ package
 ```
-คำสั่งนี้คืิอการลง packge นั้นใหม่อีกครั้งหลังจากลบทิ้งไป หรือ หากเกิดความเสียหายกับ package ก็สามารถใช้คำสั่งนี้ได้เช่นกัน (3)
+คำสั่งนี้คืิอการลง packge นั้นใหม่อีกครั้งหลังจากลบทิ้งไป หรือ หากเกิดความเสียหายกับ package ก็สามารถใช้คำสั่งนี้ได้เช่นกัน `(3)`
 
 ### Upgrade Package
 ```
 apt update
 ```
-ก่อนที่จะทำการ upgrade เราควรใช้คำสั่ง update เพื่อดึงข้อมูล version ล่าสุดของ package นั้นๆมาก่อน
+ก่อนที่จะทำการ upgrade เราควรใช้คำสั่ง update เพื่อดึงข้อมูล version ล่าสุดของ package มาก่อน
 
 ```
 apt upgrade
@@ -84,22 +84,24 @@ apt search ชื่อpackage
 ```
 apt show ชื่อpackage
 ```
-จะได้ output เป็น ข้อมูลของ package ดังนี้ (3) <br>
+จะได้ output เป็น ข้อมูลของ package ดังนี้ `(3)` <br>
 -Package: ชื่อของ package <br>
 -Version: version ของ package <br>
 -Installed-Size: จำนวนพื้นที่ที่ package นั้นใช้บน disk โดยไม่ได้รวมถึง dependency ของ package <br>
 -Depends: list ของ dependency <br>
--APT-Manual-Installed: Designates if the package was manually installed or automatically installed (for instance, like as a dependency for another package). This is visible within apt (not apt-cache). <br>
--APT-Sources: The repository where the package information was stored. This is visible within apt (not apt-cache). <br>
+-APT-Manual-Installed: ระบุว่า package นั้นถูก install เเบบ manul หรือ install เเบบอัตโนมัติ <br>
+-APT-Sources: repository ที่เก็บข้อมูลของ package นั้นๆ <br>
 -Description: คำอธิบายของ package
 
 
-## การจัดการ repository ด้วย apt
+## การจัดการ repository ด้วย apt `(3)`
 --ยังไม่เสร็จ--
-A repository is a collection of packages (typically for a specific Linux distribution and version) that are stored on a remote system. This enables software distributors to store a package (including new versions) in one place and enable users to quickly install that package onto their system. In most cases, we obtain packages from a repository - as opposed to manually downloading package files.
 
-Information about repositories that are configured on your system are stored within /etc/apt/sources.list or the directory /etc/apt/sources.list.d/. Repositories can be added manually by editing (or adding) a sources.list configuration file, though most repositories also require adding the GPG public key to APT’s keyring. To automate this process, it’s recommended to use the add-apt-repository utility.
 
+repository คือ เเหล่งรวม package ซึ่งเปิดให้ ผู้จัดจำหน่าย software(software distributor) เก็บ package ในที่ๆเดียว ซึ่งทำให้ ผู้ใช้งานสามารถ install package นั้น บนระบบของตัวเองได้อย่างรวดเร็ว ซึ่งโดยปกติเราก็มักจะ install package จาก repository มากกว่าลงเเบบ manual จาก package file ตรงๆอยู่เเล้ว 
+
+
+ข้อมูลเกี่ยวกับการตั้งค่าของ repository มักจะถูกเก็บบน directory  /etc/apt/sources.list หรือ /etc/apt/sources.list.d/.
 ### การเพิ่ม repository
 ```
  add-apt-repository urlของrepository
