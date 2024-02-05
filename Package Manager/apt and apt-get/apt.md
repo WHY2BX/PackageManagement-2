@@ -84,14 +84,14 @@ apt search ชื่อpackage
 ```
 apt show ชื่อpackage
 ```
-จะได้ output เป็น ข้อมูลของ package ดังนี้ (3) 
-Package: ชื่อของ package
-Version: version ของ package
-Installed-Size: จำนวนพื้นที่ที่ package นั้นใช้บน disk โดยไม่ได้รวมถึง dependency ของ package
-Depends: list ของ dependency
-APT-Manual-Installed: Designates if the package was manually installed or automatically installed (for instance, like as a dependency for another package). This is visible within apt (not apt-cache).
-APT-Sources: The repository where the package information was stored. This is visible within apt (not apt-cache).
-Description: คำอธิบายของ package
+จะได้ output เป็น ข้อมูลของ package ดังนี้ (3) <br>
+-Package: ชื่อของ package <br>
+-Version: version ของ package <br>
+-Installed-Size: จำนวนพื้นที่ที่ package นั้นใช้บน disk โดยไม่ได้รวมถึง dependency ของ package <br>
+-Depends: list ของ dependency <br>
+-APT-Manual-Installed: Designates if the package was manually installed or automatically installed (for instance, like as a dependency for another package). This is visible within apt (not apt-cache). <br>
+-APT-Sources: The repository where the package information was stored. This is visible within apt (not apt-cache). <br>
+-Description: คำอธิบายของ package
 
 
 ## การจัดการ repository ด้วย apt
