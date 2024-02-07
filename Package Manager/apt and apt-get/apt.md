@@ -20,11 +20,16 @@ apt install <ชื่อpackage เเรก> <ชื่อpackage สอง>
 ```
 Install หลาย package 
 
-
+```
+reinstall ชื่อ package
+```
+คำสั่งนี้คืิอการลง packge นั้นใหม่อีกครั้งหลังจากลบทิ้งไป หรือ หากเกิดความเสียหายกับ package ก็สามารถใช้คำสั่งนี้ได้เช่นกัน `(3)`
 ```
 apt list --installed
 ```
 เเสดง list ของ package ที่เรา install เอาไว้
+
+
 
 
 ### Uninstall
@@ -48,13 +53,8 @@ apt autoremove ชื่อpackage
 ```
 ลบเฉพาะ dependency ของ  pacakage ที่ระบุ
 
-### Reinstall
-```
-reinstall ชื่อ package
-```
-คำสั่งนี้คืิอการลง packge นั้นใหม่อีกครั้งหลังจากลบทิ้งไป หรือ หากเกิดความเสียหายกับ package ก็สามารถใช้คำสั่งนี้ได้เช่นกัน `(3)`
 
-### Upgrade Package
+### Upgrade
 ```
 apt update
 ```
