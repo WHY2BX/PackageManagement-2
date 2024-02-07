@@ -27,7 +27,7 @@ apt-get remove ชื่อpackage
 ```
 apt-get purge [package_name]
 ```
-
+คำสั่งสำหรับถอนการติดตั้ง package เช่นเดียวกันเเต่จะทำการลบ configuration file ของ package ออกไปด้วย
 ### Upgrade
 ```
 apt-get update
@@ -62,6 +62,5 @@ sudo apt-get list --installed
 ```
 แสดง listของ package ตามเงื่อนไขที่เรากำหนด
 
-คำสั่งสำหรับถอนการติดตั้ง package เช่นเดียวกันเเต่จะทำการลบ configuration file ของ package ออกไปด้วย
 # reference
 1)https://www.geeksforgeeks.org/apt-get-command-in-linux-with-examples/
