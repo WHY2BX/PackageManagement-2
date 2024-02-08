@@ -31,7 +31,8 @@ python-zopeinterface
 rpmlib(CompressedFileNames) = 2.6
 ```
 
-# Install 
+# Install
+ขั้นตอนแรกของการติดตั้ง RPM คือเราจะต้องดาวน์โหลดไฟล์ RPM มาก่อน โดยสามารถดาวน์โหลดได้ 2 วิธี
 ## Download RPM Files from the Internet
  * สามารถดาวน์โหลดไฟล์ RPM จากอินเทอร์เน็ตโดยใช้เว็บเบราว์เซอร์ หรือใช้คำสั่ง wget
 ```
@@ -40,23 +41,26 @@ wget [option] [URL]
 ### Example
 
 ## Download RPM Files from the Repository
- * สามารถใช้ yum และ dnf ช่วยให้คุณสามารถดาวน์โหลดไฟล์ RPM ได้
+ * สามารถใช้ yum และ dnf ช่วยให้เราสามารถดาวน์โหลดไฟล์ RPM ได้
 ```
 sudo yumdownloader [package_name]
 ```
 ```
 dnf download [package_name]
 ```
+### Example
 
-การติดตั้ง rpm สามารถใช้ได้ 3 คำสั่ง คือ rpm, yum และ dnf
+
+## Install RPM File
+เมื่อเราดาวน์โหลดไฟล์ RPM มาเรียบร้อยแล้ว ขั้นตอนต่อไปคือการติดตั้ง สามารถทำได้ 3 วิธี โดยใช้คำสั่ง rpm, yum และ dnf
 ```
-sudo rpm -i [ ชื่อ package ที่ต้องการติดตั้ง ]
+sudo rpm -i [package_name]
 ```
 ```
-sudo yum localinstall [ ชื่อ package ที่ต้องการติดตั้ง ]
+sudo yum localinstall [package_name]
 ```
 ```
-sudo dnf localinstall [ ชื่อ package ที่ต้องการติดตั้ง ]
+sudo dnf localinstall [package_name]
 ```
 
 ## Check ว่าติดตั้ง rpm เรียบร้อยแล้ว
@@ -69,26 +73,27 @@ rpm -q  [ ชื่อ package ]
 
 BitTorrent-5.2.2-1.noarch
 ```
+credit: https://www.tecmint.com/20-practical-examples-of-rpm-commands-in-linux/
 
 ## Remove
 ใช้ rpm
 ```
-sudo rpm -e  [ ชื่อ package ]
+sudo rpm -e  [package_name]
 ```
 ใช้ yum
 ```
-sudo yum remove  [ ชื่อ package ]
+sudo yum remove  [package_name]
 ```
 
 
 ใช้ dnf
 ```
-sudo dnf remove [ ชื่อ package ]
+sudo dnf remove [package_name]
 ```
 
 ## Update
 ```
-sudo rpm -Uvh [ ชื่อ package ]
+sudo rpm -Uvh [package_name]
 ```
 
 ## Verify
@@ -100,11 +105,11 @@ sudo rpm -Va
 ## Query
 ค้นหาไฟล์ของ RPM package
 ```
-rpm -qf [ ชื่อ query ]
+rpm -qf [ query name]
 ```
 ค้นหาข้อมูลของ package นั้น
 ```
-rpm -qi [ ชื่อ query ]
+rpm -qi [ query name]
 ```
 ค้นหา document ของ package นั้น
 ```
