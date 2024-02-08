@@ -21,9 +21,9 @@ sudo rpm -qpR [ ชื่อ package ]
 # Install
 ## Download RPM Installation File  
 ### Download RPM Files from the Internet
-* สามารถดาวน์โหลดไฟล์ RPM จากอินเทอร์เน็ตโดยใช้เว็บเบราว์เซอร์ หรือใช้คำสั่ง wget
+ * สามารถดาวน์โหลดไฟล์ RPM จากอินเทอร์เน็ตโดยใช้เว็บเบราว์เซอร์ หรือใช้คำสั่ง wget
 ### Download RPM Files from the Repository
-* สามารถใช้ yum และ dnf ช่วยให้คุณสามารถดาวน์โหลดไฟล์ RPM ได้
+ * สามารถใช้ yum และ dnf ช่วยให้คุณสามารถดาวน์โหลดไฟล์ RPM ได้
 
 
 การติดตั้ง rpm สามารถใช้ได้ 3 คำสั่ง คือ rpm, yum และ dnf
