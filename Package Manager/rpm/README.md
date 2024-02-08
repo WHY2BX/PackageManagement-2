@@ -17,27 +17,43 @@ sudo rpm -qpR [ ชื่อ package ]
   * **q** – บอกให้ RPM ทำการค้นหาแพ็คเกจ
   * **p** – ระบุแพ็คเกจเป้าหมายที่จะค้นหา
   * **R** – นี่แสดง requirements สำหรับแพ็คเกจ
+```
+[root@tecmint]# rpm -qpR BitTorrent-5.2.2-1-Python2.4.noarch.rpm
+
+/usr/bin/python2.4
+python >= 2.3
+python(abi) = 2.4
+python-crypto >= 2.0
+python-psyco
+python-twisted >= 2.0
+python-zopeinterface
+rpmlib(CompressedFileNames) = 2.6
+```
 
 # Install
 ## Download RPM Installation File  
 ### Download RPM Files from the Internet
  * สามารถดาวน์โหลดไฟล์ RPM จากอินเทอร์เน็ตโดยใช้เว็บเบราว์เซอร์ หรือใช้คำสั่ง wget
+```
+wget [option] [URL]
+```
+   
 ### Download RPM Files from the Repository
  * สามารถใช้ yum และ dnf ช่วยให้คุณสามารถดาวน์โหลดไฟล์ RPM ได้
-
+```
+sudo yumdownloader [package_name]
+```
+```
+dnf download [package_name]
+```
 
 การติดตั้ง rpm สามารถใช้ได้ 3 คำสั่ง คือ rpm, yum และ dnf
-
-
-ใช้ rpm
 ```
 sudo rpm -i [ ชื่อ package ที่ต้องการติดตั้ง ]
 ```
-ใช้ yum
 ```
 sudo yum localinstall [ ชื่อ package ที่ต้องการติดตั้ง ]
 ```
-ใช้ dnf
 ```
 sudo dnf localinstall [ ชื่อ package ที่ต้องการติดตั้ง ]
 ```
