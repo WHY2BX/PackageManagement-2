@@ -17,6 +17,7 @@ sudo rpm -qpR [ ชื่อ package ]
   * **q** – บอกให้ RPM ทำการค้นหาแพ็คเกจ
   * **p** – ระบุแพ็คเกจเป้าหมายที่จะค้นหา
   * **R** – นี่แสดง requirements สำหรับแพ็คเกจ
+### Exxample
 ```
 [root@tecmint]# rpm -qpR BitTorrent-5.2.2-1-Python2.4.noarch.rpm
 
@@ -36,7 +37,8 @@ rpmlib(CompressedFileNames) = 2.6
 ```
 wget [option] [URL]
 ```
-   
+### Example
+
 ## Download RPM Files from the Repository
  * สามารถใช้ yum และ dnf ช่วยให้คุณสามารถดาวน์โหลดไฟล์ RPM ได้
 ```
