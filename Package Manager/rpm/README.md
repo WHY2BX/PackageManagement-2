@@ -2,12 +2,15 @@
 ## RPM คืออะไร 
 RPM (Red Hat Package Manager) เป็น default open source และเป็น utility ใน package management ที่ค่อนข้างได้รับความนิยมสำหรับคนที่ใช้ Red Hat (ex. RHEL, CentOS และ Fedora) โดย RPM เป็นเครื่องมือที่ช่วยทำให้ผู้ใช้งาน หรือผู้ดูแลระบบสามารถทำการ install, update, uninstall, query, verify รวมไปถึงจัดการ package ในระบบปฏิบัติการ Unix/Linux ได้
 
-## Command พื้นฐาน
+## 5 basic modes for RPM command
 * **Install** : ใช้สำหรับติดตั้งแพ็คเกจ RPM
 * **Remove** : ใช้เพื่อลบ หรือยกเลิกการติดตั้งแพ็คเกจ RPM
 * **Update** : ใช้เพื่ออัปเดตแพ็คเกจ RPM ที่มีอยู่
 * **Verify** : ใช้เพื่อตรวจสอบแพ็คเกจ RPM
 * **Query** : ใช้ในการสืบค้นแพ็คเกจ RPM
+
+## RPM Command Options
+
 
 ## การ Check dependencies ก่อนติดตั้ง RPM
 การตรวจ dependencies ก่อนติดตั้งจะช่วยป้องกันปัญหาที่อาจเกิดขึ้นในกระบวนการติดตั้งหรือในการใช้งานแพ็คเกจนั้น ๆ ในภายหลังได้
@@ -64,7 +67,7 @@ sudo dnf localinstall [package_name]
 
 ## Check ว่าติดตั้ง rpm เรียบร้อยแล้ว
 ```
-rpm -q  [ ชื่อ package ]
+rpm -q  [package_name]
 ```
 ### Example
 ```
@@ -78,7 +81,7 @@ credit: https://www.tecmint.com/20-practical-examples-of-rpm-commands-in-linux/
 ```
 sudo rpm -e  [package_name]
 ```
-## Example
+### Example
 ```
 [root@tecmint]# rpm -evv nx
 ```
@@ -111,20 +114,61 @@ S.5....T.  c /etc/rc.d/rc.local
 S.5....T.  c /etc/yum.conf
 S.5....T.  c /etc/yum.repos.d/epel.repo
 ```
+credit: https://www.tecmint.com/20-practical-examples-of-rpm-commands-in-linux/
 
 ## Query
 ค้นหาไฟล์ของ RPM package
 ```
 rpm -qf [ query name]
 ```
+### Example
+```
+[root@tecmint]# rpm -qf /usr/bin/htpasswd
+
+httpd-tools-2.2.15-15.el6.centos.1.i686
+```
+credit: https://www.tecmint.com/20-practical-examples-of-rpm-commands-in-linux/
+
 ค้นหาข้อมูลของ package นั้น
 ```
 rpm -qi [ query name]
 ```
+### Example
+```
+[root@tecmint]# rpm -qi vsftpd
+
+Name        : vsftpd				   Relocations: (not relocatable)
+Version     : 2.2.2				   Vendor: CentOS
+Release     : 11.el6				   Build Date: Fri 22 Jun 2012 01:54:24 PM BDT
+Install Date: Mon 17 Sep 2012 07:55:28 PM BDT      Build Host: c6b8.bsys.dev.centos.org
+Group       : System Environment/Daemons           Source RPM: vsftpd-2.2.2-11.el6.src.rpm
+Size        : 351932                               License: GPLv2 with exceptions
+Signature   : RSA/SHA1, Mon 25 Jun 2012 04:07:34 AM BDT, Key ID 0946fca2c105b9de
+Packager    : CentOS BuildSystem <http://bugs.centos.org>
+URL         : http://vsftpd.beasts.org/
+Summary     : Very Secure Ftp Daemon
+Description :
+vsftpd is a Very Secure FTP daemon. It was written completely from
+scratch.
+```
+credit: https://www.tecmint.com/20-practical-examples-of-rpm-commands-in-linux/
+
 ค้นหา document ของ package นั้น
 ```
 rpm -qdf (query document file)
 ```
+### Example
+```
+[root@tecmint]# rpm -qdf /usr/bin/vmstat
+
+/usr/share/doc/procps-3.2.8/BUGS
+/usr/share/doc/procps-3.2.8/COPYING
+/usr/share/doc/procps-3.2.8/COPYING.LIB
+/usr/share/doc/procps-3.2.8/FAQ
+/usr/share/doc/procps-3.2.8/NEWS
+/usr/share/doc/procps-3.2.8/TODO
+```
+credit: https://www.tecmint.com/20-practical-examples-of-rpm-commands-in-linux/
 
 
 # All reference
@@ -134,5 +178,6 @@ rpm -qdf (query document file)
 
 3) https://access.redhat.com/solutions/1189/
 
+4) https://phoenixnap.com/kb/rpm-command-in-linux
 
 
