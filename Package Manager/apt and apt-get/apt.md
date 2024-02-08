@@ -96,8 +96,8 @@ apt show ชื่อpackage
 
 ## อะไรคือความเเตกต่างระหว่าง apt เเละ apt-get
 
-1.apt เป็น เวอร์ชันใหม่กว่าของ apt-get  โดย apt-get ถูกปล่อย 1998 ตามมาด้วย apt ที่ถูกปล่อยในปี 2014 
-2.คำสั่งของ apt ถูกสร้างขึ้นมาให้มีความใช่ง่ายกว่า apt-get รวมถึง interface ของ apt ที่เป็น high-level UI จึงใช้งานง่ายกว่า apt-get ที่เป็น low-level UI
+1.apt เป็น เวอร์ชันใหม่กว่าของ apt-get  โดย apt-get ถูกปล่อย 1998 ตามมาด้วย apt ที่ถูกปล่อยในปี 2014 <br>
+2.คำสั่งของ apt ถูกสร้างขึ้นมาให้มีความใช่ง่ายกว่า apt-get รวมถึง interface ของ apt ที่เป็น high-level UI จึงใช้งานง่ายกว่า apt-get ที่เป็น low-level UI <br>
 3.apt สามารถใช้คำสั่ง apt search ชื่อpackage เพื่อค้นหา package ในขณะที่ apt get นั้นไม่สามารถทำได้จึงอาจจะต้องไปพึ่งพา apt-cache เเทน
 
 
