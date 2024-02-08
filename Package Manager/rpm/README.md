@@ -18,7 +18,13 @@ sudo rpm -qpR [ ชื่อ package ]
   * **p** – ระบุแพ็คเกจเป้าหมายที่จะค้นหา
   * **R** – นี่แสดง requirements สำหรับแพ็คเกจ
 
-## Install
+# Install
+## Download RPM Installation File  
+### Download RPM Files from the Internet
+สามารถดาวน์โหลดไฟล์ RPM จากอินเทอร์เน็ตโดยใช้เว็บเบราว์เซอร์ หรือใช้คำสั่ง wget
+
+
+เราสามารถดาวน์โหลดไฟล์ก RPM ได้จากอินเทอร์เน็ตหรือจากพื้นที่เก็บข้อมูลของเราเอง
 การติดตั้ง rpm สามารถใช้ได้ 3 คำสั่ง คือ rpm, yum และ dnf
 
 ใช้ rpm
