@@ -30,6 +30,7 @@ python-twisted >= 2.0
 python-zopeinterface
 rpmlib(CompressedFileNames) = 2.6
 ```
+credit: https://www.tecmint.com/20-practical-examples-of-rpm-commands-in-linux/
 
 # Install
 ขั้นตอนแรกของการติดตั้ง RPM คือเราจะต้องดาวน์โหลดไฟล์ RPM มาก่อน โดยสามารถดาวน์โหลดได้ 2 วิธี
@@ -38,7 +39,6 @@ rpmlib(CompressedFileNames) = 2.6
 ```
 wget [option] [URL]
 ```
-### Example
 
 ## Download RPM Files from the Repository
  * สามารถใช้ yum และ dnf ช่วยให้เราสามารถดาวน์โหลดไฟล์ RPM ได้
@@ -48,7 +48,6 @@ sudo yumdownloader [package_name]
 ```
 dnf download [package_name]
 ```
-### Example
 
 
 ## Install RPM File
@@ -76,30 +75,41 @@ BitTorrent-5.2.2-1.noarch
 credit: https://www.tecmint.com/20-practical-examples-of-rpm-commands-in-linux/
 
 ## Remove
-ใช้ rpm
 ```
 sudo rpm -e  [package_name]
 ```
-ใช้ yum
+## Example
 ```
-sudo yum remove  [package_name]
+[root@tecmint]# rpm -evv nx
 ```
-
-
-ใช้ dnf
-```
-sudo dnf remove [package_name]
-```
+credit: https://www.tecmint.com/20-practical-examples-of-rpm-commands-in-linux/
 
 ## Update
 ```
 sudo rpm -Uvh [package_name]
 ```
+### Example
+```
+[root@tecmint]# rpm -Uvh nx-3.5.0-2.el6.centos.i686.rpm
+Preparing...                ########################################### [100%]
+   1:nx                     ########################################### [100%]
+```
+credit: https://www.tecmint.com/20-practical-examples-of-rpm-commands-in-linux/
 
 ## Verify
 ใช้ตรวจสอบ package RPM ทั้งหมด
 ```
 sudo rpm -Va
+```
+### Example
+```
+[root@tecmint]# rpm -Va
+
+S.5....T.  c /etc/rc.d/rc.local
+.......T.  c /etc/dnsmasq.conf
+.......T.    /etc/ld.so.conf.d/kernel-2.6.32-279.5.2.el6.i686.conf
+S.5....T.  c /etc/yum.conf
+S.5....T.  c /etc/yum.repos.d/epel.repo
 ```
 
 ## Query
@@ -117,7 +127,7 @@ rpm -qdf (query document file)
 ```
 
 
-# reference
+# All reference
 1) https://www.tecmint.com/20-practical-examples-of-rpm-commands-in-linux/
 
 2) https://phoenixnap.com/kb/how-to-install-rpm-file-centos-linux/
