@@ -30,15 +30,14 @@ python-zopeinterface
 rpmlib(CompressedFileNames) = 2.6
 ```
 
-# Install
-## Download RPM Installation File  
-### Download RPM Files from the Internet
+# Install 
+## Download RPM Files from the Internet
  * สามารถดาวน์โหลดไฟล์ RPM จากอินเทอร์เน็ตโดยใช้เว็บเบราว์เซอร์ หรือใช้คำสั่ง wget
 ```
 wget [option] [URL]
 ```
    
-### Download RPM Files from the Repository
+## Download RPM Files from the Repository
  * สามารถใช้ yum และ dnf ช่วยให้คุณสามารถดาวน์โหลดไฟล์ RPM ได้
 ```
 sudo yumdownloader [package_name]
@@ -61,6 +60,12 @@ sudo dnf localinstall [ ชื่อ package ที่ต้องการต�
 ## Check ว่าติดตั้ง rpm เรียบร้อยแล้ว
 ```
 rpm -q  [ ชื่อ package ]
+```
+### Example
+```
+[root@tecmint]# rpm -q BitTorrent
+
+BitTorrent-5.2.2-1.noarch
 ```
 
 ## Remove
