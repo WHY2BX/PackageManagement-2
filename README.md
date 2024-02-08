@@ -16,6 +16,8 @@ COMPUTER ORGANIZATION AND OPERATING SYSTEM (Chapter: Package Management, Section
   - yum ใช้บนระบบ Red Hat และ CentOS
   - dnf (Dandified yum) ใช้แทน yum บนระบบ Fedora
   - zypper ใช้บนระบบ openSUSE
+  - rpm
+  - dpkg
 
   ซึ่ง Tools เหล่านี้ก็มีคุณสมบัติที่คล้ายคลึงกัน รวมถึงมีข้อดีและข้อเสียที่แตกต่างกันไป โดยเกณฑ์จะขึ้นอยู่กับความชอบของผู้ใช้ และระบบ Linux ที่ใช้ ทำให้ไม่มีข้อสรุปว่า Tools ไหนดีที่สุด
 
