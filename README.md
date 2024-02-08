@@ -17,10 +17,9 @@ COMPUTER ORGANIZATION AND OPERATING SYSTEM (Chapter: Package Management, Section
   3. dnf (Dandified yum) เป็นเครื่องมือจัดการแพ็กเกจที่ เป็นการแทนที่ yum ที่ใช้ในระบบ Fedora
   4. zypper : เครื่องมือนี้ใช้ในระบบ openSUSE
 
-  ซึ่ง Tools เหล่านี้ก็มีคุณสมบัติที่คล้ายคลึงกัน รวมถึงมีข้อดีและข้อเสียที่แตกต่างกันไป โดยเกณฑ์จะขึ้นอยู่กับความชอบของผู้ใช้ และระบบ Linux ที่ใช้ ทำให้ไม่มีข้อสรุปว่า Tools ไหนดีทีสุด
+  ซึ่ง Tools เหล่านี้ก็มีคุณสมบัติที่คล้ายคลึงกัน รวมถึงมีข้อดีและข้อเสียที่แตกต่างกันไป โดยเกณฑ์จะขึ้นอยู่กับความชอบของผู้ใช้ และระบบ Linux ที่ใช้ ทำให้ไม่มีข้อสรุปว่า Tools ไหนดีที่สุด
 
-## Introduction to Repository Setup คืออะไร? ##
-    เป็นการตั้งค่
+## Introduction to Repository Setup ##
 - ### Respository คืออะไร? ###
     Respository เป็นคลัง Package เวลาเราจะติดตั้งโปรแกรมอะไร ก็ไปดาวน์โหลด Package ของโปรแกรมนั้นๆ ตาม Respository ที่มันอยู่ ซึ่งโดยปกติแล้ว พวก Respository จะอยู่บน Internet เพื่อให้เครื่องที่สามารถเชื่อมต่อ Internet ได้ สามารถ Update Software ได้อย่างสม่ำเสมอ แต่บางครั้งการ Update ผ่าน Internet อาจจะเปลือง Traffic การทำ Local Respository ก็อาจจะตอบโจทย์มากกว่า ซึ่ง Package เหล่านี้ก็มีการแบ่ง ตาม Distribution ที่ใช้ด้วย เช่น ตระกูล Redhat/Fedora/SUSE จะใช้ไฟล์ .rpm แต่ถ้าเป็นตระกูล Debian/Ubuntu ก็จะใช้ไฟล์ .deb ซึ่งไม่สามารถใช้ร่วมกันได้
 
