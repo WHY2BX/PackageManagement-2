@@ -64,7 +64,6 @@ wget [option] [URL]
 ### Example
 ```
 wget https://example.com/path/to/your/package.rpm
-
 ```
 
 ## Download RPM Files from the Repository
@@ -79,12 +78,15 @@ dnf download [package_name]
 
 ## Install RPM File
 เมื่อเราดาวน์โหลดไฟล์ RPM มาเรียบร้อยแล้ว ขั้นตอนต่อไปคือการติดตั้ง สามารถทำได้ 3 วิธี โดยใช้คำสั่ง rpm, yum และ dnf
+### Installing an RPM File Using rpm Command
 ```
 sudo rpm -i [package_name]
 ```
+### Installing RPM File Using yum Command (CentOS and RHEL)
 ```
 sudo yum localinstall [package_name]
 ```
+### Installing RPM File Using dnf Command (Fedora and RHEL)
 ```
 sudo dnf localinstall [package_name]
 ```
@@ -154,7 +156,7 @@ httpd-tools-2.2.15-15.el6.centos.1.i686
 credit: https://www.tecmint.com/20-practical-examples-of-rpm-commands-in-linux/
 
 
- * ค้นหาข้อมูลของ package นั้น
+ * ค้นหารายละเอียดของ package นั้น
 ```
 rpm -qi [ query name]
 ```
