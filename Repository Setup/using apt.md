@@ -3,4 +3,4 @@
 
 การจะใช้คำสั่ง `add-apt-repository` นั้น จะต้องมีแพ็กเกจ `software-properties-common` ด้วย สามารถติดตั้งได้โดย
 ```sudo apt update
-sudo apt install software-properties-common```
+sudo apt install software-properties-common
