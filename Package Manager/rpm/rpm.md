@@ -46,13 +46,29 @@ credit: https://www.tecmint.com/20-practical-examples-of-rpm-commands-in-linux/
 # Install
 ขั้นตอนแรกของการติดตั้ง RPM คือเราจะต้องดาวน์โหลดไฟล์ RPM มาก่อน โดยสามารถดาวน์โหลดได้ 2 วิธี
 ## Download RPM Files from the Internet
- * สามารถดาวน์โหลดไฟล์ RPM จากอินเทอร์เน็ตโดยใช้เว็บเบราว์เซอร์ หรือใช้คำสั่ง wget
+สามารถดาวน์โหลดไฟล์ RPM จากอินเทอร์เน็ตโดยใช้เว็บเบราว์เซอร์โดยตรง หรือใช้คำสั่ง wget (ถ้าไม่มีคำสั่งนี้ให้ทำการติดตั้งก่อน)
+
+## คำสั่งติดตั้ง wget
+### Installing wget on CentOS:
+```
+sudo yum install wget
+```
+### Installing wget on Fedora:
+```
+sudo dnf install wget
+```
+### การใช้งาน wget
 ```
 wget [option] [URL]
 ```
+### Example
+```
+wget https://example.com/path/to/your/package.rpm
+
+```
 
 ## Download RPM Files from the Repository
- * ในส่วนนี้เราสามารถใช้ yum และ dnf ช่วยให้เราสามารถดาวน์โหลดไฟล์ RPM ได้
+ในส่วนนี้เราสามารถใช้ yum และ dnf ช่วยให้เราสามารถดาวน์โหลดไฟล์ RPM ได้
 ```
 sudo yumdownloader [package_name]
 ```
@@ -125,7 +141,7 @@ S.5....T.  c /etc/yum.repos.d/epel.repo
 credit: https://www.tecmint.com/20-practical-examples-of-rpm-commands-in-linux/
 
 ## Query
-ค้นหาไฟล์ของ RPM package
+ * ค้นหาไฟล์ของ RPM package
 ```
 rpm -qf [ query name]
 ```
@@ -137,7 +153,8 @@ httpd-tools-2.2.15-15.el6.centos.1.i686
 ```
 credit: https://www.tecmint.com/20-practical-examples-of-rpm-commands-in-linux/
 
-ค้นหาข้อมูลของ package นั้น
+
+ * ค้นหาข้อมูลของ package นั้น
 ```
 rpm -qi [ query name]
 ```
@@ -161,7 +178,7 @@ scratch.
 ```
 credit: https://www.tecmint.com/20-practical-examples-of-rpm-commands-in-linux/
 
-ค้นหา document ของ package นั้น
+ * ค้นหา document ของ package นั้น
 ```
 rpm -qdf (query document file)
 ```
@@ -186,6 +203,8 @@ credit: https://www.tecmint.com/20-practical-examples-of-rpm-commands-in-linux/
 
 3) https://access.redhat.com/solutions/1189/
 
-4) https://phoenixnap.com/kb/rpm-command-in-linux
+4) https://phoenixnap.com/kb/rpm-command-in-linux/
+
+5) https://operavps.com/docs/install-rpm-file-in-linux/
 
 
