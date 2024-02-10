@@ -55,12 +55,12 @@ COMPUTER ORGANIZATION AND OPERATING SYSTEM (Chapter: Package Management, Section
 ## Members ##
 | ID            | Name          | Role | pics |
 | ------------- | ------------- |------------- | ------------- |
-| 65070193  | ยงยุทธ ชาณุภาต  | dpkg | X |
-| 65070201  | วชิรวิชญ์ นกเล็ก  | Repository setup using apt | X |
+| 65070193  | นาย ยงยุทธ ชาณุภาต  | dpkg | X |
+| 65070201  | นาย วชิรวิชญ์ นกเล็ก  | Repository setup using apt | X |
 | 65070233  | นาย สหัสวรรษ วงศ์บุญธเนธ  | apt และ apt-get | X |
-| 65070236  | สิรภพ ดรัณภพธนกูล  | X | X |
+| 65070236  | นาย สิรภพ ดรัณภพธนกูล  | X | X |
 | 65070238  | น.ส.สิริมงคล ทองขวัญใจ    | rpm | X |
-| 65070239  | สุชานันท์ อุ่นหมั่นกิจ  | yum | ![alt text](https://scontent.xx.fbcdn.net/v/t1.15752-9/405013974_373489541963217_5665276776927551710_n.jpg?stp=dst-jpg_s206x206&_nc_cat=107&ccb=1-7&_nc_sid=510075&_nc_eui2=AeEBJICt4xHlw3wzlf5Crf_mdyQyLveLh-93JDIu94uH76aSdnlDUbj-gooz1SupXek0Wy_y69Wm7jp7d8c5LABN&_nc_ohc=xSmOpJNCCRUAX8XJG99&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AdSz0sWMdWWK1EDR7sb0_ouQZ5xFhPLvAuVxEk0rmIArQQ&oe=65EEDADC) |
+| 65070239  | น.ส.สุชานันท์ อุ่นหมั่นกิจ  | yum | ![alt text](https://scontent.xx.fbcdn.net/v/t1.15752-9/405013974_373489541963217_5665276776927551710_n.jpg?stp=dst-jpg_s206x206&_nc_cat=107&ccb=1-7&_nc_sid=510075&_nc_eui2=AeEBJICt4xHlw3wzlf5Crf_mdyQyLveLh-93JDIu94uH76aSdnlDUbj-gooz1SupXek0Wy_y69Wm7jp7d8c5LABN&_nc_ohc=xSmOpJNCCRUAX8XJG99&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AdSz0sWMdWWK1EDR7sb0_ouQZ5xFhPLvAuVxEk0rmIArQQ&oe=65EEDADC) |
 | 65070241  | น.ส.สุพิชชา วิเศษเจริญ     | Mainpage & Repository setup using yum |
 
 
