@@ -3,7 +3,7 @@
 Yellowdog Updater Modified หรือที่รู้จักกันในชื่อย่อว่า **_YUM_** เป็นเครื่องมือในการจัดการแพ็คเกจทั้งการติดตั้ง อัพเดต ลบ นิยมใช้ใน Red-Hat-based distros อย่างเช่นพวก CentOS, RHEL, OpenSUSE, Fedora, Rocky Linux. YUM จะแก้ปัญหา dependencies โดยอัตโนมัติ และจะทำการ obsolete processing โดยขึ้นอยู่กับ repository metadata ที่มีอยู่ในระบบ
 นอกจากนี้ YUM ยังสามารถจัดการกับแพ็คเกจที่มีอยู่แล้วในระบบ หรือจากแพ็คเกจ **.rpm** ก็ได้ โดยที่ตัวเอกสารกำหนดค่าหลักของ YUM นั้นจะอยู่ที่ **/etc/yum.conf** รวมถึงrepositories ทุกตัวของ YUM ก็จะอยู่ที่่ **/etc/yum.repos.d**
 
-โดยการใช้ตำสั่ง YUM ได้นั้นจะต้องเปลี่ยนเป็น root ก่อน หรือไม่ก็ใช้ sudo โดยที่ yum จะมี syntax โดยทั่วไปดังนี้
+โดยการใช้คำสั่ง YUM ได้นั้นจะต้องเปลี่ยนเป็น root ก่อน หรือไม่ก็ใช้ sudo โดยที่ yum จะมี syntax โดยทั่วไปดังนี้
 
 ```
 $ sudo yum [options] [command] [package_name]
