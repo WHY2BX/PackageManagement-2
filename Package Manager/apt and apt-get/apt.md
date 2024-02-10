@@ -23,7 +23,7 @@ Install หลาย package
 ```
 reinstall ชื่อ package
 ```
-คำสั่งนี้คืิอการลง packge นั้นใหม่อีกครั้งหลังจากลบทิ้งไป หรือ หากเกิดความเสียหายกับ package ก็สามารถใช้คำสั่งนี้ได้เช่นกัน `(3)`
+คำสั่งนี้คืิอการลง packge นั้นใหม่อีกครั้งหลังจากลบทิ้งไป หรือ หากเกิดความเสียหายกับ package ก็สามารถใช้คำสั่งนี้ได้เช่นกัน 
 ```
 apt list --installed
 ```
@@ -85,7 +85,7 @@ apt search ชื่อpackage
 ```
 apt show ชื่อpackage
 ```
-จะได้ output เป็น ข้อมูลของ package ดังนี้ `(3)` <br>
+จะได้ output เป็น ข้อมูลของ package ดังนี้  <br>
 -Package: ชื่อของ package <br>
 -Version: version ของ package <br>
 -Installed-Size: จำนวนพื้นที่ที่ package นั้นใช้บน disk โดยไม่ได้รวมถึง dependency ของ package <br>
@@ -101,7 +101,7 @@ apt show ชื่อpackage
 3.apt สามารถใช้คำสั่ง apt search ชื่อpackage เพื่อค้นหา package ในขณะที่ apt get นั้นไม่สามารถทำได้จึงอาจจะต้องไปพึ่งพา apt-cache เเทน
 
 
-## การจัดการ repository ด้วย apt `(3)`
+## การจัดการ repository ด้วย apt 
 --ยังไม่เสร็จ--
 
 
