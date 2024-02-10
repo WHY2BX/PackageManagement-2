@@ -14,7 +14,7 @@ RPM (Red Hat Package Manager) เป็น default open source และเป�
 ## RPM Command Options
 **Command** | **Purpose**
 --- | ---
--h, --hash | พิมพ์เครื่องหมายแฮชขณะติดตั้งแพ็คเกจ
+-h, --hash | พิมพ์เครื่องหมายแฮชขณะติดตั้งแพ็คเกจ (เห็นได้ตอนดาวน์โหลด)
 -l, --list | แสดงรายการไฟล์ในแพ็คเกจ
 -s, --state	 | แสดงสถานะของไฟล์ที่อยู่ใน list
 -v, --verbose | ทำให้ output ที่ออกมามีความละเอียดมากขึ้น
@@ -104,14 +104,23 @@ BitTorrent-5.2.2-1.noarch
 credit: https://www.tecmint.com/20-practical-examples-of-rpm-commands-in-linux/
 
 ## Remove
+มี 3 วิธีในการลบแพ็คเกจของ RPM
+ * ลบด้วย rpm
+ * ลบด้วย yum
+ * ลบด้วย dnf
+
+### Remove with RPM
 ```
 sudo rpm -e  [package_name]
 ```
-### Example
+### Remove with yum
 ```
-[root@tecmint]# rpm -evv nx
+sudo yum remove [package_name]
 ```
-credit: https://www.tecmint.com/20-practical-examples-of-rpm-commands-in-linux/
+### Remove with yum
+```
+sudo dnf remove [package_name]
+```
 
 ## Update
 ```
