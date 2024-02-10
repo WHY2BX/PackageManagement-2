@@ -102,7 +102,7 @@ apt show ชื่อpackage
 
 
 ## การจัดการ repository ด้วย apt 
---ยังไม่เสร็จ--
+--อันนี้ของ repository setup เเต่เผลอทำไป--
 
 
 repository คือ เเหล่งรวม package ซึ่งเปิดให้ ผู้จัดจำหน่าย software(software distributor) เก็บ package ในที่ๆเดียว ซึ่งทำให้ ผู้ใช้งานสามารถ install package นั้น บนระบบของตัวเองได้อย่างรวดเร็ว ซึ่งโดยปกติเราก็มักจะ install package จาก repository มากกว่าลงเเบบ manual จาก package file ตรงๆอยู่เเล้ว 
