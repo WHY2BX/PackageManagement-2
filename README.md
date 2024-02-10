@@ -53,12 +53,13 @@ COMPUTER ORGANIZATION AND OPERATING SYSTEM (Chapter: Package Management, Section
 - https://bigta.wordpress.com/2011/04/30/installing-program-in-linux/ 
 
 ## Members ##
-| ID  | Name | Role | pics |
-| ------------- | ------------- |
-| Content Cell  | Content Cell  |
-| Content Cell  | Content Cell  |
-| Content Cell  | Content Cell  |
-| 65070233  | นาย สหัสวรรษ วงศ์บุญธเนธ  |
-| 65070238  | น.ส.สิริมงคล ทองขวัญใจ  |
-| 65070241  | น.ส.สุพิชชา วิเศษเจริญ  |
+| ID            | Name          | Role | pics |
+| ------------- | ------------- |------------- | ------------- |
+| Content Cell  | Content Cell  | X | X |
+| Content Cell  | Content Cell  | X | X |
+| Content Cell  | Content Cell  | X | X |
+| 65070233  | นาย สหัสวรรษ วงศ์บุญธเนธ  | apt และ apt-get | X |
+| 65070238  | น.ส.สิริมงคล ทองขวัญใจ    | rpm | X |
+| 65070241  | น.ส.สุพิชชา วิเศษเจริญ     | Mainpage & Repository setup using yum |
+
 
