@@ -207,7 +207,7 @@ rpm -qdf (query document file)
 credit: https://www.tecmint.com/20-practical-examples-of-rpm-commands-in-linux/
 
 
-# All reference
+# All Reference
 1) https://www.tecmint.com/20-practical-examples-of-rpm-commands-in-linux/
 
 2) https://phoenixnap.com/kb/how-to-install-rpm-file-centos-linux/
