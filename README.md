@@ -17,7 +17,7 @@ COMPUTER ORGANIZATION AND OPERATING SYSTEM (Chapter: Package Management, Section
   - dnf (Dandified yum) ใช้แทน yum บนระบบ Fedora
   - zypper ใช้บนระบบ openSUSE
   - rpm
-  - dpkg
+  - dpkg เป็นเครื่องมือสำหรับจัดการแพ็คเกจบนระบบ Linux ซึ่งช่วยให้เราสามารถติดตั้ง สร้าง ลบ และจัดการแพ็คเกจ Debian ได้
 
   ซึ่ง Tools เหล่านี้ก็มีคุณสมบัติที่คล้ายคลึงกัน รวมถึงมีข้อดีและข้อเสียที่แตกต่างกันไป โดยเกณฑ์จะขึ้นอยู่กับความชอบของผู้ใช้ และระบบ Linux ที่ใช้ ทำให้ไม่มีข้อสรุปว่า Tools ไหนดีที่สุด
 
