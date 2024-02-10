@@ -2,7 +2,7 @@
 
 ## Zypper คือ
 
-Zypper เป็น default package manager ที่ใช้ในการดูแลระบบ OpenSUSE และ SUSE Linux Enterprise เป็นอินเทอร์เฟซบรรทัดคำสั่งของตัวจัดการแพ็คเกจ ZYpp (เครื่องมือจัดการแพ็กเกจของ Zypper) จึงไม่จำเป็นต้องทำการติดตั้ง package manager ตัวนี้ _ การจะใช้งาน zypper นั้นคือการเปลี่ยนแปลงทั้งระบบจึงจำเป็นจะต้องมีสิทธิการเข้าถึงการดำเนินการบนระบบ หรือมีสิทธิผู้ใช้ root จึงจะสามารถใช้งานในระบบได้ _
+Zypper เป็น default package manager ที่ใช้ในการดูแลระบบ OpenSUSE และ SUSE Linux Enterprise เป็นอินเทอร์เฟซบรรทัดคำสั่งของตัวจัดการแพ็คเกจ ZYpp (เครื่องมือจัดการแพ็กเกจของ Zypper) จึงไม่จำเป็นต้องทำการติดตั้ง zypper ในระบบปฎิบัติการ linux ของ SUSE _การจะใช้งาน zypper นั้นคือการเปลี่ยนแปลงทั้งระบบจึงจำเป็นจะต้องมีสิทธิการเข้าถึงการดำเนินการบนระบบ หรือมีสิทธิผู้ใช้ root จึงจะสามารถใช้งานในระบบได้_
 
 ## ระบบ OpenSUSE และ SUSE Linux Enterprise คืออะไร
 
@@ -116,7 +116,7 @@ zypper lu
 ```
 
 3. เปิด session zypper shell เพื่อรันคำสั่ง
-   _ ใน session zypper shell ใช้คำสั่งเหมือนใน shell ปกติ ไม่เหมือนใน zypper terminal _
+   _ใน session zypper shell ใช้คำสั่งเหมือนใน shell ปกติ ไม่เหมือนใน zypper terminal_
 
 ```
 zypper shell
@@ -131,11 +131,11 @@ zypper lp
 
 ตัวอย่าง output :
 
-`Repository: openSUSE-15.3-Updates
-======================= Patch summary =======================
-Repository      | Updates  | Security | Recommended | Optional | Applied
-----------------+----------+----------+-------------+----------+---------
-openSUSE-15.3-Updates |     2    |     1    |     1       |     0    |     2   `
+`Repository: openSUSE-15.3-Updates`
+`======================= Patch summary =======================`
+`Repository      | Updates  | Security | Recommended | Optional | Applied`
+`----------------+----------+----------+-------------+----------+---------`
+`openSUSE-15.3-Updates |     2    |     1    |     1       |     0    |     2   `
 
 5. การจัดการเกี่ยวกับ cache รวมถึง metadata cache
 
@@ -157,7 +157,7 @@ zypper clean-metadata
 zypper clean-packages
 ```
 
-# All Reference
+# Reference about zypper
 
 1. https://th.linux-console.net/?p=2474
 
