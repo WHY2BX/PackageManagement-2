@@ -62,7 +62,6 @@ wget https://example.com/path/to/your/package.rpm
 
 ## Install RPM File
 เมื่อเราดาวน์โหลดไฟล์ RPM มาเรียบร้อยแล้ว ขั้นตอนต่อไปคือการติดตั้งโดยใช้คำสั่ง rpm
-### Installing an RPM File Using rpm Command
 ```
 sudo rpm -i [package_name]
 ```
