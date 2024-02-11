@@ -110,19 +110,6 @@ apt show ชื่อpackage
 3.apt สามารถใช้คำสั่ง apt search ชื่อpackage เพื่อค้นหา package ในขณะที่ apt get นั้นไม่สามารถทำได้จึงอาจจะต้องไปพึ่งพา apt-cache เเทน
 
 
-## การจัดการ repository ด้วย apt 
-
-repository คือ เเหล่งรวม package ซึ่งเปิดให้ ผู้จัดจำหน่าย software(software distributor) เก็บ package ในที่ๆเดียว ซึ่งทำให้ ผู้ใช้งานสามารถ install package นั้น บนระบบของตัวเองได้อย่างรวดเร็ว ซึ่งโดยปกติเราก็มักจะ install package จาก repository มากกว่าลงเเบบ manual จาก package file ตรงๆอยู่เเล้ว 
-ข้อมูลเกี่ยวกับการตั้งค่าของ repository มักจะถูกเก็บบน directory  /etc/apt/sources.list หรือ /etc/apt/sources.list.d/.
-
-### การเพิ่ม repository
-```
- add-apt-repository urlของrepository
-```
-### การลบ repository
-```
- add-apt-repository --remove urlของrepository
-```
 
 
 
