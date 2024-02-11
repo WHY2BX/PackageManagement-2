@@ -117,7 +117,7 @@ sudo rpm -e  [package_name]
 ```
 sudo yum remove [package_name]
 ```
-### Remove with yum
+### Remove with dnf
 ```
 sudo dnf remove [package_name]
 ```
