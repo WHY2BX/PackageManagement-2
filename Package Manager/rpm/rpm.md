@@ -44,19 +44,10 @@ rpmlib(CompressedFileNames) = 2.6
 credit: https://www.tecmint.com/20-practical-examples-of-rpm-commands-in-linux/
 
 # Install
-ขั้นตอนแรกของการติดตั้ง RPM คือเราจะต้องดาวน์โหลดไฟล์ RPM มาก่อน โดยสามารถดาวน์โหลดได้ 2 วิธี
+ขั้นตอนแรกของการติดตั้ง RPM คือเราจะต้องดาวน์โหลดไฟล์ RPM มาก่อน โดยสามารถทำได้ 2 วิธี
 ## Download RPM Files from the Internet
 สามารถดาวน์โหลดไฟล์ RPM จากอินเทอร์เน็ตโดยใช้เว็บเบราว์เซอร์โดยตรง หรือใช้คำสั่ง wget (ถ้าไม่มีคำสั่งนี้ให้ทำการติดตั้งก่อน)
 
-## คำสั่งติดตั้ง wget
-### Installing wget on CentOS:
-```
-sudo yum install wget
-```
-### Installing wget on Fedora:
-```
-sudo dnf install wget
-```
 ### การใช้งาน wget
 ```
 wget [option] [URL]
@@ -68,27 +59,12 @@ wget https://example.com/path/to/your/package.rpm
 
 ## Download RPM Files from the Repository
 ในส่วนนี้เราสามารถใช้ yum และ dnf ช่วยให้เราสามารถดาวน์โหลดไฟล์ RPM ได้
-```
-sudo yumdownloader [package_name]
-```
-```
-dnf download [package_name]
-```
-
 
 ## Install RPM File
-เมื่อเราดาวน์โหลดไฟล์ RPM มาเรียบร้อยแล้ว ขั้นตอนต่อไปคือการติดตั้ง สามารถทำได้ 3 วิธี โดยใช้คำสั่ง rpm, yum และ dnf
+เมื่อเราดาวน์โหลดไฟล์ RPM มาเรียบร้อยแล้ว ขั้นตอนต่อไปคือการติดตั้งโดยใช้คำสั่ง rpm
 ### Installing an RPM File Using rpm Command
 ```
 sudo rpm -i [package_name]
-```
-### Installing RPM File Using yum Command (CentOS and RHEL)
-```
-sudo yum localinstall [package_name]
-```
-### Installing RPM File Using dnf Command (Fedora and RHEL)
-```
-sudo dnf localinstall [package_name]
 ```
 
 ## Check ว่าติดตั้ง rpm เรียบร้อยแล้ว
@@ -106,20 +82,10 @@ credit: https://www.tecmint.com/20-practical-examples-of-rpm-commands-in-linux/
 ## Remove
 มี 3 วิธีในการลบแพ็คเกจของ RPM
  * ลบด้วย rpm
- * ลบด้วย yum
- * ลบด้วย dnf
 
 ### Remove with RPM
 ```
 sudo rpm -e  [package_name]
-```
-### Remove with yum
-```
-sudo yum remove [package_name]
-```
-### Remove with dnf
-```
-sudo dnf remove [package_name]
 ```
 
 ## Update
