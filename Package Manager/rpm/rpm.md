@@ -80,10 +80,6 @@ BitTorrent-5.2.2-1.noarch
 credit: https://www.tecmint.com/20-practical-examples-of-rpm-commands-in-linux/
 
 ## Remove
-มี 3 วิธีในการลบแพ็คเกจของ RPM
- * ลบด้วย rpm
-
-### Remove with RPM
 ```
 sudo rpm -e  [package_name]
 ```
